@@ -1,0 +1,419 @@
+import { CodeSurfer, CodeSurferColumns, Step} from "code-surfer";
+import { Image, Notes, Head } from "mdx-deck";
+import { nightOwl, vsDark, ultramin } from "@code-surfer/themes";
+import { Prefecth } from './components/Prefecth'
+import { Profile } from './components/Profile';
+import { Board } from './components/Board';
+import { Titles } from './components/Titles';
+import { Kevin } from './components/Kevin';
+import { ReactLogo } from './components/ReactLogo'
+import { AaronProfile } from './components/AaronProfile';
+import customTheme from "./customTheme";
+import kevincode from './kevincode.png'
+import codehike from './images/codehike.png'
+import codesurfer from './images/codesurfer.png'
+import docussaurus from './images/docussaurus.png'
+import gitnext from './images/gitnext.png'
+import mdxdeck from './images/mdxdeck.png'
+import next from './images/next.png'
+import story from './images/story.png'
+import webconainer from './images/webconainer.png'
+
+export const theme = nightOwl;
+
+<Prefecth/>
+
+<Head >
+  <title>Palestra sobre MDX</title>
+</Head>
+
+<Titles size={120} color="#ccc" text="O 'x' do MDX" />
+
+---
+
+<Kevin size={300} circle qrCode={kevincode} sizeQrCode={300}/>
+
+---
+
+# Agradecimentos
+
+---
+
+<Titles size={60} color="orange" text="Abraão Alves" />
+
+<Profile src="https://github.com/AbraaoAlves.png" size={250} circle/>
+
+<Titles size={40} color="#ccc" text="Mentor" />
+
+#voltaComOBigode
+
+---
+
+<Profile src="https://github.com/digitalcollegebr.png" size={400} circle/>
+
+<Titles size={60} color="#ccc" text="Digital College" />
+
+---
+
+<Titles size={60} color="orange" text="O que é Markdown?" />
+
+---
+
+<Titles size={60} color="#ccc" text="John Gruber" />
+
+<Profile src="https://macmagazine.com.br/wp-content/uploads/2009/08/20-johngruber.png" size={400} circle/>
+
+---
+
+<Titles size={60} color="orange" text="Aaron Swartz" />
+
+<AaronProfile />
+
+---
+
+<Titles size={50} color="#ccc" text="O Menino da Internet: A História de Aaron Swartz" />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qm4NRSa9T2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+---
+
+<Titles size={50} color="orange" text="Mas como eu escrevo em MarkDown?" />
+
+<Titles size={40} color="#ccc" text="É dificil?" />
+
+<Titles size={30} color="#ccc" text="Preciso comprar algum curso? Tem na udemy?" />
+
+---
+
+<CodeSurfer themes={vsDark}>
+
+
+```md title="Exemplo de código construido em MarkDown" subtitle="Trecho tirado da documentação do React"
+# Começo rápido
+# Você vai aprender
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como compartilhar dados entre componentes
+
+[Trecho da documentação do React](https://react.dev/learn)
+```
+
+</CodeSurfer>
+
+---
+
+<CodeSurferColumns themes={[vsDark, ultramin]}>
+
+<Step subtitle="Definindo títulos H1">
+
+```md
+# Começo rápido
+```
+# Começo rápido
+
+</Step>
+
+<Step subtitle="Criando listas">
+
+```md
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+```
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+
+</Step>
+
+<Step subtitle="Aplicando estilo negrito">
+
+```md 3[15:23],4[19:40]
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+```
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+
+</Step>
+
+<Step subtitle="Aplicando italico">
+
+```md 6[8:46]
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+```
+- Como criar e aninhar componentes
+- Como adicionar marcações e estilos
+- Como exibir **dados**
+- Como renderizar **condições e listas**
+- Como responder a eventos e atualizar a tela
+- Como *compartilhar dados entre componentes*
+
+</Step>
+
+</CodeSurferColumns>
+
+<Notes>
+
+O que é: Marcação de texto simples rápido e FACIL.
+
+Adicionar: Negrito | Italico | Listas | Links | Imagens
+
+MD usado: Foruns | Blogs | Wikis
+
+exemplo da carta, ou blog, da pra escrever sem html
+
+</Notes>
+
+---
+
+<Titles size={70} color="#ccc" text="Para saber mais acesse a documentação" />
+
+[Markdown Docs](https://www.markdownguide.org/)
+
+---
+
+<Titles size={70} color="orange" text="Mas afinal o que diabos é o MDX??" />
+
+:scream:
+Onde vive? O que come?
+:scream:
+
+---
+
+<Profile src="https://codewinds.com/assets/article/reactjs-conf-christopher-dsc_5197-800.jpg" size={300} circle/>
+
+<Titles size={60} color="orange" text="Christopher Chedeau" />
+
+- Engenheiro de software do facebook
+- Desenvolveu um plugin para markdown em 2017
+- Facilidade, Interatividade, Funcionalidade
+
+<Notes>
+Markdown Extention
+
+Permite incluir componentes React em seus arquivos markdown
+
+Criado por: Christopher vjeux Chedeau em 2017
+como uma extensão do markdown
+
+engenheiro de software do Facebook
+
+interativo e funcional
+
+</Notes>
+
+---
+
+###### Sabemos quem criou o MDX e sua relevância!
+
+<Titles size={60} color="orange" text="Mas é agora? Qual próximo passo??" />
+
+###### Como aplicamos a ideia do Christopher nos arquivos markdown?
+
+---
+
+<Titles size={50} color="orange" text="Precisamos criar um componente em React" />
+
+<ReactLogo size={300}/>
+
+---
+
+<CodeSurferColumns themes={[customTheme, ultramin]}>
+
+<Step subtitle="Nesse caso o componente será capaz de mostrar uma imagem na tela">
+
+```jsx showNumbers file='./components/Profile.tsx'
+```
+<AaronProfile />
+
+</Step>
+
+<Step subtitle="Começamos fazendo o import necessário">
+
+```jsx 1 file='./components/Profile.tsx' 
+```
+<AaronProfile />
+
+</Step>
+
+<Step subtitle="Definindo o contrato usando Typescript">
+
+```jsx 3:7 file='./components/Profile.tsx'
+```
+<AaronProfile />
+
+</Step>
+
+<Step subtitle="Inicializamos uma função passando as propriedades e o contrato">
+
+```jsx 9 file='./components/Profile.tsx'
+```
+<AaronProfile />
+
+</Step>
+
+<Step subtitle="retornamos uma estrutura HTML dentro da função criada">
+
+```jsx 10:25 file='./components/Profile.tsx'
+```
+<AaronProfile />
+
+</Step>
+
+<Step subtitle="Notem que nas propriedades da TAG <img> passamos as props que vem como argumentos">
+
+```jsx 12:24 file='./components/Profile.tsx'
+```
+<AaronProfile />
+
+</Step>
+
+</CodeSurferColumns>
+
+---
+
+:scream:
+
+<Titles size={40} color="orange" text="Não ficou claro onde que o MDX está sendo aplicado?" />
+
+:scream:
+
+---
+
+<Titles size={50} color="#ccc" text="Algumas empresas que apoiam e usa o MDX" />
+
+<div>
+  <Profile src="https://github.com/facebook.png" size={100} />
+  <Profile src="https://githubnext.com/assets/images/next-octocat.svg" size={100} />
+  <Profile src="https://github.com/amzn.png" size={100} />
+  <Profile src="https://github.com/gatsbyjs.png" size={100} />
+  <Profile src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhHA6Ug9OAg84SG5eND7mzQbxcMdQtYFCUYw&usqp=CAU" size={100} />
+  
+</div>
+
+<Notes>
+
+Apoiadores
+
+React -> Documentação interativa
+
+Amazon Web Services -> Documentação interativa
+
+Github next -> Documentação interativa
+
+Gistby -> Criação de sites estaticos
+
+Vercel -> Criação de sites estaticos
+
+</Notes>
+
+---
+
+<Titles size={50} color="#ccc" text="Tecnologias que usam o MDX" />
+
+---
+
+<Profile src={story} size={1000}/>
+
+[Storybook](https://storybook.js.org/docs/react/writing-docs/mdx)
+
+<Titles size={50} color="orange" text="Criando historias para seus componentes" />
+
+---
+
+<Profile src={next} size={1000}/>
+
+[Vercel](https://nextjs.org/blog/markdown)
+
+<Titles size={50} color="orange" text="Criando gerador de sites estáticos" />
+
+---
+
+<Profile src={docussaurus} size={1000}/>
+
+[Docusaurus](https://github.com/facebook/docusaurus/issues/4029)
+
+<Titles size={50} color="orange" text="Criando documentação interativa" />
+
+---
+
+<Profile src={gitnext} size={1000}/>
+
+[Github Code Blocks](https://blocks.githubnext.com/)
+
+<Titles size={50} color="orange" text="Criando uma documentação mais forte sem suor" />
+
+---
+
+<Profile src={webconainer} size={1000}/>
+
+[WebContainer](https://webcontainers.io/)
+
+<Titles size={50} color="orange" text="Criando experiências imersivas de desenvolvimento" />
+
+---
+
+<Profile src={codehike} size={1000}/>
+
+[codehike](https://codehike.org/)
+
+<Titles size={50} color="orange" text="Crie instruções passo a passo de código para a web" />
+
+---
+
+<Profile src={mdxdeck} size={1000}/>
+
+[MDX Deck](https://github.com/jxnblk/mdx-deck)
+
+<Titles size={50} color="orange" text="Escreva apresentações em Markdown" />
+
+---
+
+<Profile src={codesurfer} size={1000} />
+
+[codesurfer](https://codesurfer.pomb.us/)
+
+<Titles size={50} color="orange" text="Construa apresentações interativas com MarkDown" />
+
+---
+
+<Titles size={50} color="orange" text="IMPORTANTE!!!!" />
+
+##### Para vocês terem noção do poder do Deus MDX!
+
+---
+
+<Titles size={35} color="#ccc" text="Podemos simplesmente importar um componente como um jogo da velha." />
+
+<Board/>
+
+<br/>
+<Titles size={30} color="#ccc" text="E fazer com que ele funcione sem nenhuma dificuldade nesta apresentação." />
+<Titles size={20} color="#ccc" text="E támbem é possível criar apresentações dos seus componentes para o seu cliente ou equipe." />
+
+---
+
+<Kevin size={300} circle qrCode={kevincode} sizeQrCode={300}/>

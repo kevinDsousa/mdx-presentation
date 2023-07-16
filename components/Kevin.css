@@ -1,0 +1,45 @@
+.myProfile {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+    margin: 5px;
+}
+
+.myProfile div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.myProfile div:first-child img {
+    background-color: #3178C6;
+    padding: 5px
+}
+
+.myProfile div:first-child ul li {
+    font-family: monospace;
+    font-size: 30px;
+    list-style: none;
+}
+
+#MyName {
+    font-size: 60px;
+}
+
+.myProfile div:last-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.myProfile div:last-child p {
+    font-size: 30px;
+}
+
+.myProfile div:last-child img {
+    margin: 15px;
+    background-color: #3178C6;
+    padding: 5px
+}
